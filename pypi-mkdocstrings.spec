@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-mkdocstrings
-Version  : 0.21.2
-Release  : 2
-URL      : https://files.pythonhosted.org/packages/d2/a1/d08d776e8fa2508b299fad8165374317dc742a58880398ed2f9a7ecddefc/mkdocstrings-0.21.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/d2/a1/d08d776e8fa2508b299fad8165374317dc742a58880398ed2f9a7ecddefc/mkdocstrings-0.21.2.tar.gz
+Version  : 0.22.0
+Release  : 3
+URL      : https://files.pythonhosted.org/packages/90/89/39b7da1cd3d7bc9d3626a2030349443276bd4c8428b676b010ffb96ec9be/mkdocstrings-0.22.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/90/89/39b7da1cd3d7bc9d3626a2030349443276bd4c8428b676b010ffb96ec9be/mkdocstrings-0.22.0.tar.gz
 Summary  : Automatic documentation from sources, for MkDocs.
 Group    : Development/Tools
 License  : ISC
@@ -15,8 +15,7 @@ Requires: pypi-mkdocstrings-license = %{version}-%{release}
 Requires: pypi-mkdocstrings-python = %{version}-%{release}
 Requires: pypi-mkdocstrings-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(pdm)
-BuildRequires : pypi(pdm_pep517)
+BuildRequires : pypi(pdm_backend)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -64,10 +63,10 @@ python3 components for the pypi-mkdocstrings package.
 
 
 %prep
-%setup -q -n mkdocstrings-0.21.2
-cd %{_builddir}/mkdocstrings-0.21.2
+%setup -q -n mkdocstrings-0.22.0
+cd %{_builddir}/mkdocstrings-0.22.0
 pushd ..
-cp -a mkdocstrings-0.21.2 buildavx2
+cp -a mkdocstrings-0.22.0 buildavx2
 popd
 
 %build
@@ -75,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683299970
+export SOURCE_DATE_EPOCH=1685119954
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
