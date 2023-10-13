@@ -5,7 +5,7 @@
 #
 Name     : pypi-mkdocstrings
 Version  : 0.23.0
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/5e/fc/c1650cff244581436adb82ad84f0874995d07afb0efc9d2b7019bb58165c/mkdocstrings-0.23.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5e/fc/c1650cff244581436adb82ad84f0874995d07afb0efc9d2b7019bb58165c/mkdocstrings-0.23.0.tar.gz
 Summary  : Automatic documentation from sources, for MkDocs.
