@@ -7,7 +7,7 @@
 #
 Name     : pypi-mkdocstrings
 Version  : 0.24.1
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/d8/b1/ce782ff49d0fcf2ef65e9a77aa651f115a8c5e48aab6a72f2001bfcc404b/mkdocstrings-0.24.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d8/b1/ce782ff49d0fcf2ef65e9a77aa651f115a8c5e48aab6a72f2001bfcc404b/mkdocstrings-0.24.1.tar.gz
 Summary  : Automatic documentation from sources, for MkDocs.
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1710602864
+export SOURCE_DATE_EPOCH=1710685914
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
