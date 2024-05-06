@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-mkdocstrings
-Version  : 0.25.0
-Release  : 13
-URL      : https://files.pythonhosted.org/packages/26/24/e9097f6f71d324890194e8e681dbe24a28b609e3c5881c47f9c1153651df/mkdocstrings-0.25.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/26/24/e9097f6f71d324890194e8e681dbe24a28b609e3c5881c47f9c1153651df/mkdocstrings-0.25.0.tar.gz
+Version  : 0.25.1
+Release  : 14
+URL      : https://files.pythonhosted.org/packages/59/23/4bdbd280fadfe08325936358e95f4241f639fbeace2ad697e11b69c37c2a/mkdocstrings-0.25.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/59/23/4bdbd280fadfe08325936358e95f4241f639fbeace2ad697e11b69c37c2a/mkdocstrings-0.25.1.tar.gz
 Summary  : Automatic documentation from sources, for MkDocs.
 Group    : Development/Tools
 License  : ISC
@@ -67,10 +67,10 @@ python3 components for the pypi-mkdocstrings package.
 
 
 %prep
-%setup -q -n mkdocstrings-0.25.0
-cd %{_builddir}/mkdocstrings-0.25.0
+%setup -q -n mkdocstrings-0.25.1
+cd %{_builddir}/mkdocstrings-0.25.1
 pushd ..
-cp -a mkdocstrings-0.25.0 buildavx2
+cp -a mkdocstrings-0.25.1 buildavx2
 popd
 
 %build
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1714323848
+export SOURCE_DATE_EPOCH=1715015207
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
