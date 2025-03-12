@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-mkdocstrings
-Version  : 0.28.2
-Release  : 24
-URL      : https://files.pythonhosted.org/packages/e8/83/5eab81d31953c725942eb663b6a4cf36ad06d803633c8e1c6ddc708af62d/mkdocstrings-0.28.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e8/83/5eab81d31953c725942eb663b6a4cf36ad06d803633c8e1c6ddc708af62d/mkdocstrings-0.28.2.tar.gz
+Version  : 0.29.0
+Release  : 25
+URL      : https://files.pythonhosted.org/packages/8e/4d/a9484dc5d926295bdf308f1f6c4f07fcc99735b970591edc414d401fcc91/mkdocstrings-0.29.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/8e/4d/a9484dc5d926295bdf308f1f6c4f07fcc99735b970591edc414d401fcc91/mkdocstrings-0.29.0.tar.gz
 Summary  : Automatic documentation from sources, for MkDocs.
 Group    : Development/Tools
 License  : ISC
@@ -57,7 +57,6 @@ Requires: pypi(markdown)
 Requires: pypi(markupsafe)
 Requires: pypi(mkdocs)
 Requires: pypi(mkdocs_autorefs)
-Requires: pypi(mkdocs_get_deps)
 Requires: pypi(pymdown_extensions)
 
 %description python3
@@ -65,10 +64,10 @@ python3 components for the pypi-mkdocstrings package.
 
 
 %prep
-%setup -q -n mkdocstrings-0.28.2
-cd %{_builddir}/mkdocstrings-0.28.2
+%setup -q -n mkdocstrings-0.29.0
+cd %{_builddir}/mkdocstrings-0.29.0
 pushd ..
-cp -a mkdocstrings-0.28.2 buildavx2
+cp -a mkdocstrings-0.29.0 buildavx2
 popd
 
 %build
@@ -76,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740425483
+export SOURCE_DATE_EPOCH=1741796146
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
